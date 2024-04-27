@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>온라인 미션</title>
+</head>
+<body>
+    <h1>깔@롱 쌈@뽕한 AI 온라인 미션</h1>
+    <p>ㅤㅤㅤㅤ 6자리 미션 코드 입력</p>
+    <input type="text" id="codeInput" maxlength="6" placeholder="미션 코드를 입력하세요">
+    <button id="button1" style="display: none;">1번 버튼</button>
+    <button id="button2" style="display: none;">2번 버튼</button>
+    <button id="button3" style="display: none;">3번 버튼</button>
+    <button id="button4" style="display: none;">4번 버튼</button>
+    <button id="button5" style="display: none;">5번 버튼</button>
+    <button id="button6" style="display: none;">6번 버튼</button>
+  
+  <img src="https://i.namu.wiki/i/VGMiyrI5MagHJsvUndEO5nMIR3B5EUqXhstURJNbRMJxwRWTORaHvSHXOK0L_OMQwDeXV4kzyRv03z1k2iwk8w.webp"
+  style="float: right;  margin-right: px; margin-top: -50px; width:200px; height:200px;"
+  / >
+
+    <script>
+        document.getElementById("codeInput").addEventListener("input", function() {
+            var codeInput = document.getElementById("codeInput").value;
+            var buttons = document.querySelectorAll('button');
+            buttons.forEach(function(button) {
+                button.style.display = "none";
+            });
+            switch(codeInput) {
+                case "123456":
+                    document.getElementById("button1").style.display = "block";
+                    break;
+                case "234567":
+                    document.getElementById("button2").style.display = "block";
+                    break;
+                case "345678":
+                    document.getElementById("button3").style.display = "block";
+                    break;
+                case "456789":
+                    document.getElementById("button4").style.display = "block";
+                    break;
+                case "567890":
+                    document.getElementById("button5").style.display = "block";
+                    break;
+                case "678901":
+                    document.getElementById("button6").style.display = "block";
+                    break;
+                default:
+                    break;
+            }
+        });
+
+        document.getElementById("button1").addEventListener("click", function() {
+            window.location.href = "https://www.google.com";
+        });
+
+        document.getElementById("button2").addEventListener("click", function() {
+            window.location.href = "https://www.youtube.com/watch?v=TpPwI_Lo0YY&t=14s";
+        });
+
+        document.getElementById("button3").addEventListener("click", function() {
+            window.location.href = "https://www.google.com";
+        });
+
+        document.getElementById("button4").addEventListener("click", function() {
+            window.location.href = "https://www.google.com";
+        });
+
+        document.getElementById("button5").addEventListener("click", function() {
+            window.location.href = "https://www.google.com";
+        });
+
+        document.getElementById("button6").addEventListener("click", function() {
+            window.location.href = "https://www.google.com";
+        });
+    </script>
+</body>
+</html>
